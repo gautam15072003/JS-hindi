@@ -23,3 +23,4 @@ const url = "https://gautam.com/hitesh%20choudary"
 console.log(url.replace('%','='))
 console.log(url.includes('kashish'))
 console.log(gameName.split('-'))
+
