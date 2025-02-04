@@ -45,8 +45,9 @@ function addone(num1){
 // addone(5)
 
 
-// addTwo()
-const addTwo = function(num){
+// addTwo() 
+const addTwo = function(num){  // here the function is holded in a variable that shows us a error 
+                                //that calls hoisting how it works
     return num+2
 }
 // addTwo()
