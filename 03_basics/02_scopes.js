@@ -3,7 +3,7 @@ let a = 500
 if(true){
     let a = 10
     const b= 20
-   console.log("inner val:",a);
+//    console.log("inner val:",a);
     
 }
 //  console.log(a);
@@ -32,9 +32,21 @@ if (true) {
     const username = "Gautam"
     if (username === "Gautam") {
         const website = "dhapli.com"
-        console.log(username+website)
+        // console.log(username+website)
     }
-    console.log(website);
+    // console.log(website);
     
 }
-console.log(username);
+// =======================mini hoidting +++++++++++++++++++++++++++++++++++++++++++=
+console.log(addone(5))
+function addone(num1){
+    return num1+1
+}
+// addone(5)
+
+
+// addTwo()
+const addTwo = function(num){
+    return num+2
+}
+// addTwo()
