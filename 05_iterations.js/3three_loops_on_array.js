@@ -18,4 +18,18 @@ maps.set('In',"india")
 maps.set('USA',"united states of america")
 maps.set('Fr',"France")
 maps.set('In',"india")
-console.log(maps);
+// console.log(maps);
+
+
+for (const [key,value] of maps) {
+    console.log(key,':-',value)
+}
+
+    // const myObject = {          //objects are not iterateable for for of
+    //     game1:"god of war",
+    //     game2:"god of castles"
+    // }
+    // for (const [key,value] of myObject) {
+    //     console.log(key,value)
+    // }
+    
