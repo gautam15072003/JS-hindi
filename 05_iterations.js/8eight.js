@@ -19,5 +19,5 @@ const myshoppingCart = [
     }
 ]
 
-const totalPrice = myshoppingCart.forEach() 
+const totalPrice = myshoppingCart.reduce((acc,item)=>acc+item.price,0)
 console.log(totalPrice);
