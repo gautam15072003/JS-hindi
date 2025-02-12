@@ -3,8 +3,9 @@
 ## project link 
 [click here](https://stackblitz.com/edit/dom-project-chaiaurcode?file=1-colorChanger%2Fchaiaurcode.js)
 
-# solution code 
-## solution code 1
+# project code 
+## project code 1
+### Color switcher 
 ```javascript
 
 const buttons = document.querySelectorAll('.button');
@@ -31,4 +32,32 @@ buttons.forEach(function (button) {
     });
   });
 
+```
+# project code 2 
+## BMI calculator
+
+``` javascript 
+const form = document.querySelector('form')
+//  this use case will give you empty value  
+// const height = parseInt(document.querySelector('#height').value)
+form.addEventListener('submit',function(e){
+  e.preventDefault();
+
+ const height = parseInt(document.querySelector('#height').value);
+ const weight = parseInt(document.querySelector('#weight').value);
+ const results = document.querySelector('#results');
+if(height === '' || height < 0 || isNaN(height) ){
+   results.innerHTML = `please give a valid height ${height}`;
+}
+else if(weight === '' || weight < 0 || isNaN(weight) ){
+   results.innerHTML = `please give a valid height ${weight}`;
+}else {
+  const bmi = (weight / ((height * height) / 10000)).toFixed(2);
+  //  shows the rresults
+    results.innerHTML = `<span>${bmi}</span>`
+
+
+}
+
+});
 ```
