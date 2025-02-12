@@ -1,10 +1,10 @@
 # projects related to Dom 
 
-## project link 
+## project link to practice and run 
 [click here](https://stackblitz.com/edit/dom-project-chaiaurcode?file=1-colorChanger%2Fchaiaurcode.js)
 
-# project code 
-## project code 1
+# project codes
+## project code (1)
 ### Color switcher 
 ```javascript
 
@@ -33,7 +33,7 @@ buttons.forEach(function (button) {
   });
 
 ```
-# project code 2 
+# project code (2) 
 ## BMI calculator
 
 ``` javascript 
@@ -60,4 +60,19 @@ else if(weight === '' || weight < 0 || isNaN(weight) ){
 }
 
 });
+```
+
+# Project code (3)
+## digital clock
+
+``` javascript
+const clock = document.getElementById('clock')
+// const clock = document.querySelector('#clock')
+
+
+ setInterval(function(){let date = new Date ()
+  console.log(date.toLocaleTimeString());
+ 
+  clock.innerHTML = date.toLocaleTimeString();},1000)
+
 ```
